@@ -3,16 +3,12 @@ To create a multi-channel notification delivery system, we can follow a modular 
 
 Here is a high-level architecture diagram of the system:
 
-+----------------+       +----------------+       +----------------+
-|   Notification |       |   Notification |       |   Notification |
-|     Service    |       |     Service    |       |     Service    |
-+----------------+       +----------------+       +----------------+
-         |                         |                         |
-         |                         |                         |
-+----------------+       +----------------+       +----------------+
-| Push Notification |     | SMS Notification |     | Email Notification |
-|      Module      |     |      Module      |     |       Module       |
-+----------------+       +----------------+       +----------------+
+Here is a high-level architecture diagram of the system:
+
+![image](https://github.com/code978/Multi-Channel/assets/56649142/770edaf9-9fc8-4f16-b468-88e3aaeb2dec)
+
+
+
 
 
 The Notification Service is responsible for receiving notification requests from the application and forwarding them to the appropriate channel module(s). Each channel module is responsible for sending notifications through its respective channel.
