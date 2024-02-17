@@ -19,8 +19,3 @@ The registerModule method allows us to add new channel modules to the Notificati
 
 The send method of each channel module should accept a notification payload and send the notification through its respective channel.
 
-
-Similarly, we can create modules for SMS and email notifications.
-To use the Notification Service, we can create an instance of the service and register the required channel modules.
-
-This code creates an instance of the Notification Service and registers the Push, SMS, and Email Notification Modules. It then sends a sample notification to all registered modules.
